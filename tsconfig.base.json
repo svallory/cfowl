@@ -14,7 +14,16 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cfowl/data/projections": ["libs/data/projections/src/index.ts"],
+      "@cfowl/data/repositories": ["libs/data/repositories/src/index.ts"],
+      "@cfowl/data/views": ["libs/data/views/src/index.ts"],
+      "@cfowl/domain/accounting": ["libs/domain/accounting/src/index.ts"],
+      "@cfowl/domain/importer": ["libs/domain/importer/src/index.ts"],
+      "@cfowl/domain/users": ["libs/domain/users/src/index.ts"],
+      "@cfowl/ui/components": ["libs/ui/components/src/index.ts"],
+      "@cfowl/ui/features": ["libs/ui/features/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

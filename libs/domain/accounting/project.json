@@ -1,0 +1,23 @@
+{
+  "root": "libs/domain/accounting",
+  "sourceRoot": "libs/domain/accounting/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/domain/accounting/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/domain/accounting"],
+      "options": {
+        "jestConfig": "libs/domain/accounting/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["domain", "bc:accounting"]
+}

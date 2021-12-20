@@ -1,0 +1,23 @@
+{
+  "root": "libs/domain/users",
+  "sourceRoot": "libs/domain/users/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/domain/users/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/domain/users"],
+      "options": {
+        "jestConfig": "libs/domain/users/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["domain", "bc:users"]
+}

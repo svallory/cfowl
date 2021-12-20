@@ -1,4 +1,13 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "data-projections": "libs/data/projections",
+    "data-repositories": "libs/data/repositories",
+    "data-views": "libs/data/views",
+    "domain-accounting": "libs/domain/accounting",
+    "domain-importer": "libs/domain/importer",
+    "domain-users": "libs/domain/users",
+    "ui-components": "libs/ui/components",
+    "ui-features": "libs/ui/features"
+  }
 }

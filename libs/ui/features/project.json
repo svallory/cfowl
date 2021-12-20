@@ -1,0 +1,23 @@
+{
+  "root": "libs/ui/features",
+  "sourceRoot": "libs/ui/features/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/ui/features/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/ui/features"],
+      "options": {
+        "jestConfig": "libs/ui/features/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["ui", "ui:features"]
+}

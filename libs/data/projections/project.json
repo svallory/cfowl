@@ -1,0 +1,23 @@
+{
+  "root": "libs/data/projections",
+  "sourceRoot": "libs/data/projections/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/data/projections/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/data/projections"],
+      "options": {
+        "jestConfig": "libs/data/projections/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["infrastructure"]
+}

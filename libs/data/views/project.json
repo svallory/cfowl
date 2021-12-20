@@ -1,0 +1,23 @@
+{
+  "root": "libs/data/views",
+  "sourceRoot": "libs/data/views/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/data/views/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/data/views"],
+      "options": {
+        "jestConfig": "libs/data/views/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["infrastructure"]
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/domain/importer",
+  "sourceRoot": "libs/domain/importer/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/domain/importer/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/domain/importer"],
+      "options": {
+        "jestConfig": "libs/domain/importer/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["domain", "bc:importer"]
+}
