@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "api": "apps/api",
     "data-projections": "libs/data/projections",
     "data-repositories": "libs/data/repositories",
     "data-views": "libs/data/views",
